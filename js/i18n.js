@@ -127,18 +127,11 @@
 
       "footer.social": "Redes sociales",
       "cookies.open": "Preferencias de cookies",
-      "cookies.title": "Preferencias de privacidad",
+      "cookies.title": "Consentimiento de cookies",
       "cookies.lead":
-        "Vos controlás qué datos compartimos. Solo pedimos esto una vez; podés cambiarlo desde Cookies en el pie.",
-      "cookies.essential.title": "Necesarias",
-      "cookies.essential.desc":
-        "Idioma y recordar tu elección de privacidad. La web no funciona bien sin esto.",
-      "cookies.marketing.title": "Marketing (Meta)",
-      "cookies.marketing.desc":
-        "Píxel de Meta para medir visitas y clics a WhatsApp desde anuncios. Si lo apagás, no enviamos esos datos.",
-      "cookies.reject": "Rechazar opcionales",
-      "cookies.save": "Guardar",
-      "cookies.accept": "Aceptar todo",
+        "Nosotros y nuestros socios, incluido Meta, usamos cookies y otras tecnologías para personalizar tu experiencia, mostrar anuncios y medir resultados. No las usamos con esos fines a menos que las aceptes. Podés cambiarlo cuando quieras desde Preferencias de cookies en el pie.",
+      "cookies.reject": "Rechazar",
+      "cookies.accept": "Aceptar",
       "lightbox.close": "Cerrar",
 
       "port.eyebrow": "Portfolio",
@@ -282,18 +275,11 @@
 
       "footer.social": "Social networks",
       "cookies.open": "Cookie preferences",
-      "cookies.title": "Privacy preferences",
+      "cookies.title": "Cookie consent",
       "cookies.lead":
-        "You control what data we share. We only ask once; you can change it anytime from Cookies in the footer.",
-      "cookies.essential.title": "Essential",
-      "cookies.essential.desc":
-        "Language and remembering your privacy choice. The site needs these to work properly.",
-      "cookies.marketing.title": "Marketing (Meta)",
-      "cookies.marketing.desc":
-        "Meta pixel to measure visits and WhatsApp clicks from ads. If you turn it off, we don’t send that data.",
-      "cookies.reject": "Reject optional",
-      "cookies.save": "Save",
-      "cookies.accept": "Accept all",
+        "We and our partners, including Meta, use cookies and other technologies to personalize your experience, show ads, and measure results. We will not use them for these purposes unless you accept. You can change this anytime from Cookie preferences in the footer.",
+      "cookies.reject": "Decline",
+      "cookies.accept": "Accept",
       "lightbox.close": "Close",
 
       "port.eyebrow": "Portfolio",

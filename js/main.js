@@ -96,44 +96,19 @@
       <div class="vs-cookie__backdrop" data-vs-close></div>
       <div class="vs-cookie__panel glass-minimal">
         <header class="vs-cookie__head">
-          <h2 id="vs-cookie-title" class="vs-cookie__title" data-i18n="cookies.title">${t("cookies.title", "Preferencias de privacidad")}</h2>
+          <h2 id="vs-cookie-title" class="vs-cookie__title" data-i18n="cookies.title">${t("cookies.title", "Consentimiento de cookies")}</h2>
           ${current ? `<button type="button" class="vs-cookie__x" data-vs-close aria-label="${t("lightbox.close", "Cerrar")}">&times;</button>` : ""}
         </header>
         <p class="vs-cookie__lead" data-i18n="cookies.lead">${t(
           "cookies.lead",
-          "Vos controlás qué datos compartimos. Solo pedimos esto una vez; podés cambiarlo cuando quieras desde Cookies en el pie."
+          "Nosotros y nuestros socios, incluido Meta, usamos cookies y otras tecnologías para personalizar tu experiencia, mostrar anuncios y medir resultados. No las usamos con esos fines a menos que las aceptes. Podés cambiarlo cuando quieras desde Preferencias de cookies en el pie."
         )}</p>
-        <div class="vs-cookie__list">
-          <label class="vs-cookie__row">
-            <span class="vs-cookie__row-copy">
-              <strong data-i18n="cookies.essential.title">${t("cookies.essential.title", "Necesarias")}</strong>
-              <span data-i18n="cookies.essential.desc">${t(
-                "cookies.essential.desc",
-                "Idioma y recordar tu elección de privacidad. La web no funciona bien sin esto."
-              )}</span>
-            </span>
-            <input type="checkbox" checked disabled aria-label="${t("cookies.essential.title", "Necesarias")}">
-          </label>
-          <label class="vs-cookie__row">
-            <span class="vs-cookie__row-copy">
-              <strong data-i18n="cookies.marketing.title">${t("cookies.marketing.title", "Marketing (Meta)")}</strong>
-              <span data-i18n="cookies.marketing.desc">${t(
-                "cookies.marketing.desc",
-                "Píxel de Meta para medir visitas y clics a WhatsApp desde anuncios. Si lo apagás, no enviamos esos datos."
-              )}</span>
-            </span>
-            <input type="checkbox" id="vs-cookie-marketing" ${current === "accepted" ? "checked" : ""} aria-label="${t("cookies.marketing.title", "Marketing (Meta)")}">
-          </label>
-        </div>
         <div class="vs-cookie__actions">
-          <button type="button" class="vs-cookie__btn vs-cookie__btn--ghost" data-choice="reject" data-i18n="cookies.reject">${t("cookies.reject", "Rechazar opcionales")}</button>
-          <button type="button" class="vs-cookie__btn vs-cookie__btn--ghost" data-choice="save" data-i18n="cookies.save">${t("cookies.save", "Guardar")}</button>
-          <button type="button" class="vs-cookie__btn vs-cookie__btn--solid" data-choice="accept" data-i18n="cookies.accept">${t("cookies.accept", "Aceptar todo")}</button>
+          <button type="button" class="vs-cookie__btn vs-cookie__btn--ghost" data-choice="reject" data-i18n="cookies.reject">${t("cookies.reject", "Rechazar")}</button>
+          <button type="button" class="vs-cookie__btn vs-cookie__btn--solid" data-choice="accept" data-i18n="cookies.accept">${t("cookies.accept", "Aceptar")}</button>
         </div>
       </div>
     `;
-
-    const marketing = root.querySelector("#vs-cookie-marketing");
 
     const finish = (value) => {
       applyConsent(value);
@@ -142,9 +117,6 @@
 
     root.querySelector('[data-choice="accept"]').addEventListener("click", () => finish("accepted"));
     root.querySelector('[data-choice="reject"]').addEventListener("click", () => finish("rejected"));
-    root.querySelector('[data-choice="save"]').addEventListener("click", () => {
-      finish(marketing.checked ? "accepted" : "rejected");
-    });
 
     root.querySelectorAll("[data-vs-close]").forEach((el) => {
       el.addEventListener("click", () => {
