@@ -130,8 +130,18 @@
       "cookies.title": "Consentimiento de cookies",
       "cookies.lead":
         "Nosotros y nuestros socios, incluido Meta, usamos cookies y otras tecnologías para personalizar tu experiencia, mostrar anuncios y medir resultados. No las usamos con esos fines a menos que las aceptes. Podés cambiarlo cuando quieras desde Preferencias de cookies en el pie.",
+      "cookies.prefsTitle": "Preferencias de cookies",
+      "cookies.prefsLead":
+        "Elegí qué cookies querés permitir. Las necesarias siempre están activas.",
+      "cookies.essential.title": "Necesarias",
+      "cookies.essential.desc":
+        "Idioma y recordar tu elección de privacidad. La web no funciona bien sin esto.",
+      "cookies.marketing.title": "Marketing (Meta)",
+      "cookies.marketing.desc":
+        "Píxel de Meta para medir visitas y clics a WhatsApp desde anuncios.",
       "cookies.reject": "Rechazar",
       "cookies.accept": "Aceptar",
+      "cookies.save": "Guardar mis cambios",
       "lightbox.close": "Cerrar",
 
       "port.eyebrow": "Portfolio",
@@ -278,8 +288,18 @@
       "cookies.title": "Cookie consent",
       "cookies.lead":
         "We and our partners, including Meta, use cookies and other technologies to personalize your experience, show ads, and measure results. We will not use them for these purposes unless you accept. You can change this anytime from Cookie preferences in the footer.",
+      "cookies.prefsTitle": "Cookie preferences",
+      "cookies.prefsLead":
+        "Choose which cookies you want to allow. Essential cookies stay on.",
+      "cookies.essential.title": "Essential",
+      "cookies.essential.desc":
+        "Language and remembering your privacy choice. The site needs these to work properly.",
+      "cookies.marketing.title": "Marketing (Meta)",
+      "cookies.marketing.desc":
+        "Meta pixel to measure visits and WhatsApp clicks from ads.",
       "cookies.reject": "Decline",
       "cookies.accept": "Accept",
+      "cookies.save": "Save my changes",
       "lightbox.close": "Close",
 
       "port.eyebrow": "Portfolio",

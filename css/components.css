@@ -597,11 +597,100 @@ html.vs-cookie-lock body {
   color: rgba(255, 255, 255, 0.62);
 }
 
+.vs-cookie--prefs .vs-cookie__panel {
+  width: min(100%, 520px);
+}
+
+.vs-cookie__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.vs-cookie__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+}
+
+.vs-cookie__row-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  min-width: 0;
+}
+
+.vs-cookie__row-copy strong {
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.vs-cookie__row-copy span {
+  font-family: var(--font);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.vs-cookie__row input[type="checkbox"] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  border: 1.5px solid rgba(255, 255, 255, 0.28);
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.vs-cookie__row input[type="checkbox"]:checked {
+  background: #2e8add;
+  border-color: #2e8add;
+}
+
+.vs-cookie__row input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.vs-cookie__row input[type="checkbox"]:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 .vs-cookie__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
   justify-content: flex-end;
+}
+
+.vs-cookie--prefs .vs-cookie__actions {
+  justify-content: stretch;
+}
+
+.vs-cookie--prefs .vs-cookie__actions .vs-cookie__btn {
+  width: 100%;
+  min-width: 0;
 }
 
 .vs-cookie__btn {
@@ -640,12 +729,12 @@ html.vs-cookie-lock body {
 }
 
 @media (max-width: 560px) {
-  .vs-cookie__actions {
+  .vs-cookie:not(.vs-cookie--prefs) .vs-cookie__actions {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .vs-cookie__btn {
+  .vs-cookie:not(.vs-cookie--prefs) .vs-cookie__btn {
     width: 100%;
     min-width: 0;
   }
