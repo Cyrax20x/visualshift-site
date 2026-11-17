@@ -179,13 +179,49 @@
     requestAnimationFrame(() => root.classList.add("is-open"));
   }
 
-  document.querySelectorAll(".footer__cookies").forEach((btn) => {
-    btn.addEventListener("click", () => openModal(true));
-  });
+  function refreshOpenModalCopy() {
+    const modal = document.getElementById("vs-cookie-modal");
+    if (!modal) return;
+    modal.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      const val = window.VisualShiftI18n?.t?.(key);
+      if (val) el.textContent = val;
+    });
+    modal.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-aria");
+      const val = window.VisualShiftI18n?.t?.(key);
+      if (val) el.setAttribute("aria-label", val);
+    });
+    modal.querySelectorAll("input[type='checkbox'][aria-label]").forEach((input) => {
+      const row = input.closest(".vs-cookie__row");
+      const strong = row?.querySelector("[data-i18n]");
+      const key = strong?.getAttribute("data-i18n");
+      const val = key ? window.VisualShiftI18n?.t?.(key) : "";
+      if (val) input.setAttribute("aria-label", val);
+    });
+  }
 
-  const consent = readConsent();
-  if (consent === "accepted") loadMetaPixel();
-  else if (consent == null) openModal(false);
+  function bootConsent() {
+    document.querySelectorAll(".footer__cookies").forEach((btn) => {
+      btn.addEventListener("click", () => openModal(true));
+    });
+
+    window.addEventListener("vs:lang", refreshOpenModalCopy);
+
+    const consent = readConsent();
+    if (consent === "accepted") loadMetaPixel();
+    else if (consent == null) openModal(false);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      window.VisualShiftI18n?.apply?.();
+      bootConsent();
+    });
+  } else {
+    window.VisualShiftI18n?.apply?.();
+    bootConsent();
+  }
 })();
 
 function i18n(key, fallback) {

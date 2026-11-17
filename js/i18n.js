@@ -323,10 +323,22 @@
     },
   };
 
+  function detectBrowserLang() {
+    const candidates = [];
+    if (Array.isArray(navigator.languages)) candidates.push(...navigator.languages);
+    if (navigator.language) candidates.push(navigator.language);
+    for (const raw of candidates) {
+      const code = String(raw || "").toLowerCase().split("-")[0];
+      if (code === "en") return "en";
+      if (code === "es") return "es";
+    }
+    return "es";
+  }
+
   function getLang() {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved === "en" || saved === "es") return saved;
-    return "es";
+    return detectBrowserLang();
   }
 
   function t(key, lang) {
