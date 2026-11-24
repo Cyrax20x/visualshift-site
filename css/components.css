@@ -845,12 +845,17 @@ html.vs-cookie-lock body {
   justify-self: start;
 }
 
-.footer__meta,
-.footer__cookies {
+.footer__meta {
   justify-self: end;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.85rem 1.1rem;
   text-align: right;
 }
 
+.footer__legal,
 .footer__cookies {
   appearance: none;
   margin: 0;
@@ -861,10 +866,12 @@ html.vs-cookie-lock body {
   font: inherit;
   letter-spacing: inherit;
   text-transform: inherit;
+  text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
+.footer__legal:hover,
 .footer__cookies:hover {
   color: rgba(255, 255, 255, 0.85);
 }

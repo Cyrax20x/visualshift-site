@@ -126,6 +126,7 @@
       "cta.btn": "Contactar Ahora",
 
       "footer.social": "Redes sociales",
+      "footer.privacy": "Privacidad canal-yt",
       "cookies.open": "Preferencias de cookies",
       "cookies.title": "Consentimiento de cookies",
       "cookies.lead":
@@ -284,6 +285,7 @@
       "cta.btn": "Contact Now",
 
       "footer.social": "Social networks",
+      "footer.privacy": "canal-yt privacy",
       "cookies.open": "Cookie preferences",
       "cookies.title": "Cookie consent",
       "cookies.lead":
