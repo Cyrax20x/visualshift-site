@@ -2476,7 +2476,13 @@ html[lang="en"] .contact-glass__features {
   z-index: 1;
   max-width: 760px;
   margin: 0 auto;
-  padding: calc(5.5rem + env(safe-area-inset-top, 0px)) 1.25rem 4rem;
+  padding: calc(8.75rem + env(safe-area-inset-top, 0px)) 1.25rem 4rem;
+}
+
+@media (max-width: 900px) {
+  .privacy-shell {
+    padding-top: calc(7.75rem + env(safe-area-inset-top, 0px));
+  }
 }
 
 .privacy-doc {
