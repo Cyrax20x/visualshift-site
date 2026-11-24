@@ -19,6 +19,9 @@
       "meta.title.contacto": "Contacto | Visual Shift",
       "meta.desc.contacto":
         "Contactá a Visual Shift por WhatsApp. Agencia de edición de video liderada por ClashiVFX.",
+      "meta.title.privacidad": "Políticas de privacidad | Visual Shift",
+      "meta.desc.privacidad":
+        "Políticas de privacidad de Visual Shift y de la herramienta canal-yt para YouTube.",
 
       "nav.home": "Inicio",
       "nav.shorts": "Videos cortos",
@@ -126,7 +129,47 @@
       "cta.btn": "Contactar Ahora",
 
       "footer.social": "Redes sociales",
-      "footer.privacy": "Privacidad canal-yt",
+      "footer.privacy": "Políticas de privacidad",
+
+      "privacy.eyebrow": "Legal",
+      "privacy.title": "Políticas de privacidad",
+      "privacy.updated": "Última actualización: 23 de noviembre de 2026",
+      "privacy.s1.title": "Qué es canal-yt",
+      "privacy.s1.body":
+        "canal-yt es una herramienta interna de Visual Shift. Con el permiso del propietario de cada canal, sube videos y lee las estadísticas de los canales de YouTube que administra Visual Shift. No es una aplicación pública ni se ofrece a terceros.",
+      "privacy.s2.title": "Qué datos usa",
+      "privacy.s2.intro":
+        "Solo a través de los Servicios de API de YouTube, y solo del canal que dio el permiso:",
+      "privacy.s2.li1":
+        "Datos del canal: nombre, identificador, videos, listas de reproducción, títulos, descripciones y miniaturas.",
+      "privacy.s2.li2":
+        "Estadísticas de YouTube Analytics: vistas, tiempo de reproducción, retención, suscriptores, impresiones y, si el canal está monetizado, ingresos estimados.",
+      "privacy.s2.note":
+        "canal-yt no accede al correo, a los contactos ni a ningún otro servicio de la cuenta de Google.",
+      "privacy.s3.title": "Para qué los usa",
+      "privacy.s3.body":
+        "Para subir y editar los videos del canal, cargar la información del canal y armar informes internos sobre su rendimiento. Para nada más.",
+      "privacy.s4.title": "Dónde se guardan y con quién se comparten",
+      "privacy.s4.li1":
+        "El permiso y las estadísticas se guardan en el equipo de trabajo de Visual Shift. No se suben a servidores de terceros.",
+      "privacy.s4.li2": "No se venden, no se comparten y no se usan para publicidad.",
+      "privacy.s4.li3": "Los informes se comparten solo con el propietario del canal.",
+      "privacy.s5.title": "Cuánto tiempo se guardan",
+      "privacy.s5.body":
+        "Mientras el permiso esté vigente. Si el propietario quita el permiso, los datos guardados se borran dentro de los 30 días, o antes si lo pide.",
+      "privacy.s6.title": "Cómo quitar el permiso",
+      "privacy.s6.body":
+        'El propietario puede quitar el acceso de canal-yt en cualquier momento desde la configuración de seguridad de su cuenta de Google: <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener noreferrer">security.google.com/settings/security/permissions</a>.',
+      "privacy.s7.title": "YouTube y Google",
+      "privacy.s7.li1":
+        'canal-yt usa los Servicios de API de YouTube. Al autorizarlo, el propietario acepta las <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">Condiciones del Servicio de YouTube</a>.',
+      "privacy.s7.li2":
+        'El uso que hace Google de los datos se rige por la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.',
+      "privacy.s7.li3":
+        'El uso que canal-yt hace de la información recibida de las APIs de Google cumple con la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Política de Datos del Usuario de los Servicios de las APIs de Google</a>, incluidos los requisitos de Uso Limitado.',
+      "privacy.s8.title": "Contacto",
+      "privacy.s8.body": '<a href="contacto.html">visualshift.site/contacto</a>',
+
       "cookies.open": "Preferencias de cookies",
       "cookies.title": "Consentimiento de cookies",
       "cookies.lead":
@@ -178,6 +221,9 @@
       "meta.title.contacto": "Contact | Visual Shift",
       "meta.desc.contacto":
         "Reach Visual Shift on WhatsApp. Video editing agency led by ClashiVFX.",
+      "meta.title.privacidad": "Privacy policy | Visual Shift",
+      "meta.desc.privacidad":
+        "Visual Shift privacy policy and the canal-yt tool for YouTube.",
 
       "nav.home": "Home",
       "nav.shorts": "Short videos",
@@ -285,7 +331,47 @@
       "cta.btn": "Contact Now",
 
       "footer.social": "Social networks",
-      "footer.privacy": "canal-yt privacy",
+      "footer.privacy": "Privacy policy",
+
+      "privacy.eyebrow": "Legal",
+      "privacy.title": "Privacy policy",
+      "privacy.updated": "Last updated: November 23, 2026",
+      "privacy.s1.title": "What is canal-yt",
+      "privacy.s1.body":
+        "canal-yt is an internal Visual Shift tool. With each channel owner's permission, it uploads videos and reads statistics for the YouTube channels Visual Shift manages. It is not a public application and is not offered to third parties.",
+      "privacy.s2.title": "What data it uses",
+      "privacy.s2.intro":
+        "Only through the YouTube API Services, and only for the channel that granted permission:",
+      "privacy.s2.li1":
+        "Channel data: name, ID, videos, playlists, titles, descriptions and thumbnails.",
+      "privacy.s2.li2":
+        "YouTube Analytics statistics: views, watch time, retention, subscribers, impressions and, if the channel is monetized, estimated revenue.",
+      "privacy.s2.note":
+        "canal-yt does not access email, contacts or any other Google account services.",
+      "privacy.s3.title": "How the data is used",
+      "privacy.s3.body":
+        "To upload and edit the channel's videos, set up channel information and prepare internal performance reports. Nothing else.",
+      "privacy.s4.title": "Where it is stored and who it is shared with",
+      "privacy.s4.li1":
+        "The authorization and statistics are stored on Visual Shift's work computer. They are not uploaded to third-party servers.",
+      "privacy.s4.li2": "They are not sold, shared or used for advertising.",
+      "privacy.s4.li3": "Reports are shared only with the channel owner.",
+      "privacy.s5.title": "How long it is kept",
+      "privacy.s5.body":
+        "While the authorization remains active. If the owner revokes permission, stored data is deleted within 30 days, or sooner on request.",
+      "privacy.s6.title": "How to revoke access",
+      "privacy.s6.body":
+        'The owner can revoke canal-yt access at any time from their Google account security settings: <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener noreferrer">security.google.com/settings/security/permissions</a>.',
+      "privacy.s7.title": "YouTube and Google",
+      "privacy.s7.li1":
+        'canal-yt uses the YouTube API Services. By authorizing it, the owner agrees to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>.',
+      "privacy.s7.li2":
+        "Google's use of data is governed by the <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Google Privacy Policy</a>.",
+      "privacy.s7.li3":
+        "canal-yt's use of information received from Google APIs adheres to the <a href=\"https://developers.google.com/terms/api-services-user-data-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Google API Services User Data Policy</a>, including the Limited Use requirements.",
+      "privacy.s8.title": "Contact",
+      "privacy.s8.body": '<a href="contacto.html">visualshift.site/contacto</a>',
+
       "cookies.open": "Cookie preferences",
       "cookies.title": "Cookie consent",
       "cookies.lead":
@@ -355,6 +441,7 @@
       cortos: "cortos",
       largos: "largos",
       contacto: "contacto",
+      privacidad: "privacidad",
     };
     const id = map[page] || "index";
     const title = t(`meta.title.${id}`, lang);
