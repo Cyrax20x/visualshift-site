@@ -9,7 +9,7 @@
     es: {
       "meta.title.index": "Visual Shift | Agencia de Edición de Video",
       "meta.desc.index":
-        "Visual Shift — Agencia de editores de video. Reels, YouTube, VSL y más.",
+        "Agencia de delegación y edición de video. Con los mejores editores para no complicarte la postproducción.",
       "meta.title.cortos": "Videos Cortos | Visual Shift",
       "meta.desc.cortos":
         "Reels y videos verticales editados por Visual Shift. Estilo profesional para redes sociales.",
@@ -212,7 +212,7 @@
     en: {
       "meta.title.index": "Visual Shift | Video Editing Agency",
       "meta.desc.index":
-        "Visual Shift — Video editing agency. Reels, YouTube, VSL and more.",
+        "Video delegation and editing agency. With the best editors so post-production is never a hassle.",
       "meta.title.cortos": "Short Videos | Visual Shift",
       "meta.desc.cortos":
         "Reels and vertical videos edited by Visual Shift. Pro style for social media.",
@@ -451,6 +451,16 @@
     if (title) document.title = title;
     const meta = document.querySelector('meta[name="description"]');
     if (meta && desc) meta.setAttribute("content", desc);
+    document
+      .querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]')
+      .forEach((el) => {
+        if (desc) el.setAttribute("content", desc);
+      });
+    document
+      .querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]')
+      .forEach((el) => {
+        if (title) el.setAttribute("content", title);
+      });
     document.documentElement.lang = lang;
   }
 
