@@ -9,7 +9,7 @@
     es: {
       "meta.title.index": "Visual Shift | Agencia de Edición de Video",
       "meta.desc.index":
-        "Visual Shift — Agencia de editores de video liderada por ClashiVFX. Reels, YouTube, VSL y más.",
+        "Visual Shift — Agencia de editores de video. Reels, YouTube, VSL y más.",
       "meta.title.cortos": "Videos Cortos | Visual Shift",
       "meta.desc.cortos":
         "Reels y videos verticales editados por Visual Shift. Estilo profesional para redes sociales.",
@@ -18,7 +18,7 @@
         "Videos horizontales, YouTube, VSL y decks editados por Visual Shift.",
       "meta.title.contacto": "Contacto | Visual Shift",
       "meta.desc.contacto":
-        "Contactá a Visual Shift por WhatsApp. Agencia de edición de video liderada por ClashiVFX.",
+        "Contactá a Visual Shift por WhatsApp. Agencia de edición de video.",
       "meta.title.privacidad": "Políticas de privacidad | Visual Shift",
       "meta.desc.privacidad":
         "Políticas de privacidad de Visual Shift y de la herramienta canal-yt para YouTube.",
@@ -36,7 +36,7 @@
 
       "hero.badge": "Agencia audiovisual",
       "hero.lead":
-        'Agencia de <strong>editores de video</strong> liderada por <strong>ClashiVFX</strong>. Los <strong>mejores editores</strong>, sin complicarte la postproducción.',
+        'Agencia de <strong>delegación y edición de video</strong>. Con los <strong>mejores editores</strong> para no complicarte la postproducción.',
       "hero.cta": "Iniciar proyecto",
       "hero.work": "Ver trabajos",
       "hero.scroll": "Seguir scrolleando",
@@ -44,7 +44,8 @@
       "hero.whoLine": "Agencia de editores para",
       "hero.fast": "Entregas rápidas",
       "hero.cine": "Resultados de cine",
-      "hero.led": "Liderado por",
+      "hero.delegate": "Delegá y listo",
+      "hero.delegateLine": "<span>Vos creás.</span><span>Nosotros editamos.</span>",
 
       "exp.eyebrow": "Experiencia",
       "exp.line1": "Años llevando el contenido",
@@ -211,7 +212,7 @@
     en: {
       "meta.title.index": "Visual Shift | Video Editing Agency",
       "meta.desc.index":
-        "Visual Shift — Video editing agency led by ClashiVFX. Reels, YouTube, VSL and more.",
+        "Visual Shift — Video editing agency. Reels, YouTube, VSL and more.",
       "meta.title.cortos": "Short Videos | Visual Shift",
       "meta.desc.cortos":
         "Reels and vertical videos edited by Visual Shift. Pro style for social media.",
@@ -220,7 +221,7 @@
         "Horizontal videos, YouTube, VSL and decks edited by Visual Shift.",
       "meta.title.contacto": "Contact | Visual Shift",
       "meta.desc.contacto":
-        "Reach Visual Shift on WhatsApp. Video editing agency led by ClashiVFX.",
+        "Reach Visual Shift on WhatsApp. Video editing agency.",
       "meta.title.privacidad": "Privacy policy | Visual Shift",
       "meta.desc.privacidad":
         "Visual Shift privacy policy and the canal-yt tool for YouTube.",
@@ -238,7 +239,7 @@
 
       "hero.badge": "Audiovisual agency",
       "hero.lead":
-        'Video <strong>editing agency</strong> led by <strong>ClashiVFX</strong>. The <strong>best editors</strong>, without the post-production hassle.',
+        'Video <strong>delegation and editing agency</strong>. With the <strong>best editors</strong> so post-production is never a hassle.',
       "hero.cta": "Start a project",
       "hero.work": "View work",
       "hero.scroll": "Keep scrolling",
@@ -246,7 +247,8 @@
       "hero.whoLine": "Editors agency for",
       "hero.fast": "Fast delivery",
       "hero.cine": "Cinematic results",
-      "hero.led": "Led by",
+      "hero.delegate": "Hand it off",
+      "hero.delegateLine": "<span>You create.</span><span>We edit.</span>",
 
       "exp.eyebrow": "Experience",
       "exp.line1": "Years taking content",

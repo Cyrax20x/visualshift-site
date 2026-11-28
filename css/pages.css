@@ -392,7 +392,7 @@
   width: min(100%, 340px);
 }
 
-.float-card--clashi {
+.float-card--slot {
   top: 58%;
   right: 0;
   bottom: auto;
@@ -402,8 +402,43 @@
   animation-delay: -2.4s;
   z-index: 3;
   width: min(100%, 360px);
-  padding: 1rem 1.1rem 1.15rem;
+  min-height: 150px;
+  padding: 1.35rem 1.5rem 1.5rem;
   overflow: visible;
+}
+
+.float-card__promise {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1em;
+  margin: 0;
+  font-family: var(--font);
+  font-size: clamp(1.35rem, 2.1vw, 1.7rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1.15;
+  padding: 0;
+  animation: promise-glow 3.2s ease-in-out infinite;
+}
+
+.float-card__promise span {
+  display: block;
+}
+
+@keyframes promise-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.35));
+  }
+  50% {
+    filter: drop-shadow(0 0 22px rgba(96, 165, 250, 0.7));
+  }
+}
+
+.float-card--slot:hover .float-card__promise {
+  animation-play-state: paused;
+  filter: drop-shadow(0 0 28px rgba(96, 165, 250, 0.85));
 }
 
 .float-card--mini {
@@ -446,18 +481,12 @@
   z-index: 3;
 }
 
-.float-card--clashi:hover {
+.float-card--slot:hover {
   z-index: 4;
 }
 
 .float-card--mini:hover {
   z-index: 7;
-}
-
-.float-card--clashi:hover {
-  box-shadow:
-    0 28px 70px rgba(0, 0, 0, 0.55),
-    0 0 90px rgba(255, 120, 40, 0.22);
 }
 
 .float-card .eyebrow {
@@ -502,25 +531,6 @@
   color: rgba(255, 255, 255, 0.92);
   margin: 0;
   white-space: nowrap;
-}
-
-.float-card__clashi {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: none;
-  min-height: 120px;
-  object-fit: contain;
-  object-position: center center;
-  transform: scale(1.35);
-  transform-origin: center center;
-  filter: drop-shadow(0 0 22px rgba(255, 100, 30, 0.45));
-  transition: filter 0.45s ease, transform 0.45s var(--ease);
-}
-
-.float-card--clashi:hover .float-card__clashi {
-  filter: drop-shadow(0 0 32px rgba(255, 120, 40, 0.65));
-  transform: scale(1.42);
 }
 
 .float-card__cursor {
@@ -620,11 +630,7 @@
     margin: 0 auto;
   }
 
-  /* Mobile: mini arriba → quiénes somos → mini abajo; sin Clashi */
-  .float-card--clashi {
-    display: none;
-  }
-
+  /* Mobile: mini → quiénes somos → delegá → mini */
   .float-card--cine {
     order: 1;
     align-self: center;
@@ -645,8 +651,19 @@
     z-index: 2;
   }
 
-  .float-card--speed {
+  .float-card--slot {
     order: 3;
+    align-self: center;
+    width: min(100%, 280px);
+    min-height: 0;
+    padding: 1.15rem 1.25rem 1.25rem;
+    --tilt: 4deg;
+    --scale: 1;
+    z-index: 2;
+  }
+
+  .float-card--speed {
+    order: 4;
     align-self: center;
     width: auto;
     max-width: 200px;
@@ -654,6 +671,10 @@
     --tilt: 3deg;
     --scale: 1;
     z-index: 4;
+  }
+
+  .float-card__promise {
+    font-size: 1.15rem;
   }
 
   .float-card--mini {
